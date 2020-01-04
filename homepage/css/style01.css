@@ -1,0 +1,605 @@
+
+@charset "UTF-8";
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/* リセット */
+
+
+
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic'  
+    }
+
+
+.section-title {
+    font-size: 5rem;
+    text-align: center;
+    padding: 4.5rem 0 3.5rem;
+}
+
+.link {
+    background-color: #5ec1bd;
+    border-radius: 5rem;
+    height: 5rem;
+    font-size: 3rem;
+}
+
+.link p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+/* header */
+
+.top-header {
+    height: 10vh;
+    line-height: 10vh;
+    color: #707070;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-logo {
+    margin-left: 3rem;
+    font-size: 2.5rem;
+}
+
+.header-nav {
+    margin-right: 3.5rem;
+    font-size: 1.5rem;
+}
+
+.header-nav li {
+    display: inline-block;
+    margin-right: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header-nav a:link {
+    color: #707070;
+}
+
+.header-nav a:visited {
+    color: #707070;
+}
+
+.header-nav a:hover {
+    color: #000;
+}
+
+.header-nav a:active {
+    color: #000;
+}
+
+.link a:link {
+    color: #ffffff;
+}
+
+.link a:visited {
+    color: #ffffff;
+}
+
+.link a:hover {
+    color: #000;
+}
+
+.link a:active {
+    color: #000;
+}
+
+
+
+
+/* top-btn */
+
+#top-btn {
+    height: 5rem;
+    width: 5rem;
+    background-color: #5ec1bd;
+    border: #707070 solid 0.4rem;
+    font-size: 3rem;
+    color: #ffffff;
+    font-weight: 900;
+    text-align: center;
+    line-height: 5rem;
+    position: fixed;
+    bottom: 3rem;
+    right: 3rem;
+    z-index: 100;
+    cursor: pointer;
+}
+
+
+
+
+
+
+/* home */
+
+#home {
+    height: 88vh;
+    background: url(../素材/tennis-home.jpg)no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.home-title {
+    height: 25%;
+    width: 60%;
+    background-color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: rgba(0, 0, 0, 0.2) solid 0.8vw;
+}
+
+.home-title h1 {
+    width: 100%;
+    color: #707070;
+    font-size: 7rem;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+
+/* about */
+
+#about {
+    height: 80vh;
+    background-color: #5ec1bd;
+    position: relative;
+}
+
+.about-main {
+    height: 90%;
+    width: 55%;
+    background-color: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 3rem;
+}
+
+.about-ex {
+    font-size: 3rem;
+    text-align: center;
+    margin: 5%;
+    line-height: 1.2em;
+}
+
+.about-link {
+    width: 40%;
+    margin-left: 50%;
+}
+
+
+
+
+
+/* event */
+
+#event {
+    height: 100vh;
+}
+
+.event-main {
+    height: 55%;
+    width: 90%;
+    margin: 0 auto;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-around;
+}
+
+.event-left, .event-right {
+    height: 100%;
+    width: 40%;
+    background-color: #5ec1bd;
+    text-align: center;
+}
+
+.event-image {
+    height: 50%;
+    width: auto;
+}
+
+.event-image img {
+    height: 100%;
+    width: auto;
+}
+
+.event-ex h3 {
+    font-size: 4rem;
+    margin-bottom: 5%;
+}
+
+.event-ex p {
+    font-size: 3rem;
+    line-height: 1.2em;
+}
+
+.event-link {
+    width: 30%;
+    margin: 3% auto;
+}
+
+
+
+
+/* contact */
+
+#contact {
+    height: 70vh;
+    background-color: #e6e6e6;
+    text-align: center;
+}
+
+.contact-ex {
+    font-size: 3rem;
+    margin: 2%;
+}
+
+.contact-link {
+    width: 35%;
+    margin: 5rem auto;
+}
+
+
+
+
+
+/* about page */
+
+#about-page {
+    height: 65rem;
+    background-color: #5ec1bd;
+}
+
+.ap-title {
+    font-size: 3.5rem;
+    color: #ffffff;
+    text-align: center;
+    padding: 2.5rem;
+}
+
+.ap-main {
+    height: 82%;
+    position: relative;
+}
+
+.ap-right {
+    height: 70%;
+    width: 50;
+    background-color: #ffffff;
+    position: absolute;
+    right: 10%;
+}
+
+.ap-right p {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #707070;
+    margin: 1.8rem 0 0 6rem;
+    line-height: 1.5em;
+    letter-spacing: 1.5rem;
+}
+
+.ap-image {
+    margin-top: 4%;
+    margin-left: 45%;
+}
+
+.ap-image img {
+    height: 15rem;
+    width: auto;
+}
+
+.ap-left img {
+    height: 65%;
+    width: auto;
+    position: absolute;
+    left: 10%;
+    bottom: 0;
+}
+
+
+
+
+
+/* event-page */
+
+#event-page {
+    height: 60rem;
+    border-top: #cccccc solid;
+}
+
+.ep-zone {
+    height: 95%;
+    width: 80%;
+    border: #707070 solid 1.2rem;
+    margin: 3rem auto 3rem;
+    padding-bottom: 8%;
+}
+
+.ep-title {
+    font-size: 6rem;
+    color: #707070;
+    text-align: center;
+    padding: 1rem 0 4.5rem;
+}
+
+.ep-main {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.ep-box {
+    background-color: #5ec1bd;
+    height: 15%;
+    width: 45%;
+    margin: 0 auto;
+    position: relative;
+    border-radius: 7rem;
+}
+
+.ep-main p {
+    font-size: 3.5rem;
+    font-weight: 500;
+    color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);  
+}
+
+
+
+
+/* contact-page */
+
+#contact-page {
+    height: 55rem;
+    background-color: #e6e6e6;
+}
+
+.cp-title {
+    font-size: 5rem;
+    text-align: center;
+    padding: 3rem;
+}
+
+.cp-main {
+    width: 65%;
+    margin: 0 auto;
+}
+
+.cp-main label {
+    font-size: 2.5rem;
+    text-align: right;
+    display: inline-block;
+    width: 35%;
+    padding: 2rem;
+}
+
+.cp-main input, textarea {
+    width: 45%;
+    box-sizing: border-box;
+    border: none;
+}
+
+
+.cp-main input {
+    padding-bottom: 3rem;
+    margin: -1rem 0 0 5rem;
+}
+
+.cp-main textarea {
+    padding-bottom: 15rem;
+    vertical-align: top;
+    margin: 1rem 0 0 5rem;
+}
+
+.button-submit {
+    text-align: center;
+}
+
+.button {
+    height: 5rem;
+    width: 20rem;
+    margin-top: 3rem;
+    border: none;
+    background-color: #ffffff;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #000;
+}
+
+
+
+
+/* fade */
+
+.fade {
+    transform: translateY(10rem);
+    transition: all 1.5s;
+    opacity: 0;
+}
+
+.fadein {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
+
+
+/* ep-box */
+
+.ep-fade {
+    transform: translateY(10rem);
+    opacity: 0;
+}
+
+.ep-in {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.box1 {
+    transition: all 1s linear 0.0s;
+}
+
+.box2 {
+    transition: all 1s linear 0.3s;
+}
+
+.box3 {
+    transition: all 1s linear 0.6s;
+}
+
+.box4 {
+    transition: all 1s linear 0.9s;
+}
+
+.box5 {
+    transition: all 1s linear 1.2s;
+}
+
+.box6 {
+    transition: all 1s linear 1.5s;
+}
+
+.box7 {
+    transition: all 1s linear 1.8s;
+}
+
+.box8 {
+    transition: all 1s linear 2.1s;
+}
+
+
+
+
